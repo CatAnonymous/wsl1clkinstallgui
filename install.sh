@@ -14,8 +14,25 @@ elif [ -f /etc/debian_version ] ; then
         OSNAME=DEBIAN
     fi
 fi
-if [ "x$OSNAMEVER" = "x" ] ; then
+if [ "x$OSNAME" = "x" ] ; then
     echo "Khong ho tro he dieu hanh cua ban."
     echo
     exit 1
 fi
+
+clean
+
+if [ "x$OSNAME" = "xUBUNTU" ] ; then
+    sudo apt -y install xfce4
+elif [ "x$OSNAME" = "xDEBIAN" ] ; then
+    sudo apt -y install xfce4
+elif [ "x$OSNAME" = "xKALI" ] ; then
+    sudo apt -y install kali-desktop-xfce
+fi
+
+sudo apt-get install xrdp -y
+sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak
+sudo sed -i 's/3389/3390/g' /etc/xrdp/xrdp.ini
+sudo sed -i 's/max_bpp=32/#max_bpp=32\nmax_bpp=128/g' /etc/xrdp/xrdp.ini
+sudo sed -i 's/xserverbpp=24/#xserverbpp=24\nxserverbpp=128/g' /etc/xrdp/xrdp.ini
+sudo /etc/init.d/xrdp start
