@@ -2,7 +2,7 @@
 
 ###    Author: KhaiPhan (khaiphan9x@gmail.com)
 
-OSNAME=UNKNOWN
+OSNAME=
 
 if [ -f /etc/lsb-release ] ; then
     OSNAME=UBUNTU
