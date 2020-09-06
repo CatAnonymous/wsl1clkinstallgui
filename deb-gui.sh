@@ -24,9 +24,10 @@ fi
 clean
 
 if [ "x$OSNAME" = "xUBUNTU" ] ; then
-    sudo apt -y install xfce4
+    sudo apt -y install xfce4 xfce4-terminal
+    sudo apt -y install mate-core mate-desktop-environment mate-notification-daemon
 elif [ "x$OSNAME" = "xDEBIAN" ] ; then
-    sudo apt -y install xfce4
+    sudo apt -y install xfce4 xfce4-terminal
 elif [ "x$OSNAME" = "xKALI" ] ; then
     sudo apt -y install kali-desktop-xfce
 fi
