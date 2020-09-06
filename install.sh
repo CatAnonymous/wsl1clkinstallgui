@@ -36,3 +36,7 @@ sudo sed -i 's/3389/3390/g' /etc/xrdp/xrdp.ini
 sudo sed -i 's/max_bpp=32/#max_bpp=32\nmax_bpp=128/g' /etc/xrdp/xrdp.ini
 sudo sed -i 's/xserverbpp=24/#xserverbpp=24\nxserverbpp=128/g' /etc/xrdp/xrdp.ini
 sudo /etc/init.d/xrdp start
+
+echo
+echo "Cai dat thanh cong. GUI dang co san tai localhost:3390, hay su dung Microsoft Remote Desktop Connect de ket noi."
+echo "Tam biet."
