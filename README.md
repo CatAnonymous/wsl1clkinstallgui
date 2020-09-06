@@ -10,7 +10,7 @@ sudo apt update && sudo apt -y upgrade
 ```
 wget https://raw.githubusercontent.com/khaiphan9x/wsl1clkinstallgui/master/deb-gui.sh && chmod +x deb-gui.sh && ./deb-gui.sh
 ```
-** Nếu chưa có wget bạn cần cài wget bằng lệnh sau
+### Nếu chưa có wget bạn cần cài wget bằng lệnh sau
 ```
 sudo apt install -y wget
 ```
