@@ -15,6 +15,7 @@ elif [ -f /etc/debian_version ] ; then
     fi
 fi
 if [ "x$OSNAME" = "x" ] ; then
+    echo
     echo "Khong ho tro he dieu hanh cua ban."
     echo
     exit 1
