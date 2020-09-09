@@ -29,8 +29,8 @@ if [ "x$OSNAME" = "xUBUNTU" ] ; then
 elif [ "x$OSNAME" = "xDEBIAN" ] ; then
     sudo apt -y install xfce4 xfce4-terminal
 elif [ "x$OSNAME" = "xKALI" ] ; then
-    sudo apt -y install kali-desktop-xfce
-    #sudo apt install kali-desktop-gnome
+    sudo apt -y install kali-desktop-xfce compton
+    #sudo apt install kali-desktop-gnome compton
 fi
 
 sudo apt-get install xrdp -y
