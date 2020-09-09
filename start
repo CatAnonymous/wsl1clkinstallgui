@@ -1,0 +1,8 @@
+#!/bin/bash
+export DISPLAY=:0.0
+export LIBGL_ALWAYS_INDIRECT=1
+taskkill.exe /IM vcxsrv.exe /T /F > /dev/null 2>&1
+sleep 2
+/mnt/d/Program\ Files/VcXsrv/vcxsrv.exe :0 -fullscreen -clipboard -wgl &
+sleep 2
+startxfce4
