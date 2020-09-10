@@ -44,5 +44,6 @@ wget https://raw.githubusercontent.com/khaiphan9x/wsl1clkinstallgui/master/start
 
 echo
 echo "Cai dat thanh cong. Hay su dung VcXsrv de ket noi."
+echo "Khoi dong bang lenh: ./startx"
 #echo "Cai dat thanh cong. GUI dang co san tai localhost:3390, hay su dung Microsoft Remote Desktop Connect de ket noi."
 echo "Tam biet."
